@@ -1,7 +1,6 @@
 # 🍽️ Restaurant API
 
-A RESTful API for restaurant management, built with **Node.js** and **TypeScript**, using **Express** and **Knex.js** for database interaction.  
-This project allows efficient management of products, tables, table sessions, and orders.
+A RESTful API for restaurant management, built with **Node.js** and **TypeScript**, using **Express** and **Knex.js** for database interaction. This project allows efficient management of products, tables, table sessions, and orders.
 
 <br>
 
