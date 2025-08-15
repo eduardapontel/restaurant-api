@@ -64,7 +64,7 @@ A RESTful API for restaurant management, built with **Node.js** and **TypeScript
 - **TypeScript**
 - **Express**
 - **Knex.js**
-- **SQLite** (or another configured database)
+- **SQLite**
 - **Zod** for data validation
 
 <br>
@@ -74,7 +74,7 @@ A RESTful API for restaurant management, built with **Node.js** and **TypeScript
 1. **Clone the repository**
 
     ```bash
-    git clone https://github.com/eduardapontel/restaurant-api
+    git clone https://github.com/eduardapontel/restaurant-api.git
     cd restaurant-api
     ```
 
@@ -113,35 +113,37 @@ A RESTful API for restaurant management, built with **Node.js** and **TypeScript
 
 ## 📡 API Endpoints
 
-### Products
+**Base URL:** `http://localhost:3333`
 
-| Method | Endpoint        | Description            |
-| ------ | --------------- | ---------------------- |
-| GET    | `/products`     | List all products      |
-| POST   | `/products`     | Create a new product   |
-| PUT    | `/products/:id` | Update a product by ID |
-| DELETE | `/products/:id` | Delete a product by ID |
+### Products
+| Method | Endpoint        | Description                 |
+|-------:|-----------------|-----------------------------|
+| GET    | `/products`     | List products               |
+| POST   | `/products`     | Create product              |
+| PUT    | `/products/:id` | Update product by ID        |
+| DELETE | `/products/:id` | Delete product by ID        |
 
 ### Tables
-| Method | Endpoint      | Description          |
-| ------ | ------------- | -------------------- |
-| GET    | `/tables`     | List all tables      |
-| POST   | `/tables`     | Create a new table   |
-| PUT    | `/tables/:id` | Update a table by ID |
-| DELETE | `/tables/:id` | Delete a table by ID |
+| Method | Endpoint    | Description            |
+|-------:|-------------|------------------------|
+| GET    | `/tables`   | List tables            |
+
+> Table creation is handled manually in the database or via the `seeds/tables.ts` file.
 
 ### Table Sessions
-| Method | Endpoint                     | Description                 |
-| ------ | ---------------------------- | --------------------------- |
-| GET    | `/tables-sessions`           | List all table sessions     |
-| POST   | `/tables-sessions`           | Open a new table session    |
-| PATCH  | `/tables-sessions/:id/close` | Close a table session by ID |
+| Method | Endpoint                   | Description                     |
+|-------:|----------------------------|---------------------------------|
+| GET    | `/tables-sessions`         | List table sessions             |
+| POST   | `/tables-sessions`         | Open/create a table session     |
+| PATCH  | `/tables-sessions/:id`     | Update/close a table session    |
 
 ### Orders
-| Method | Endpoint  | Description        |
-| ------ | --------- | ------------------ |
-| GET    | `/orders` | List all orders    |
-| POST   | `/orders` | Create a new order |
+| Method | Endpoint                                       | Description                                    |
+|-------:|------------------------------------------------|------------------------------------------------|
+| POST   | `/orders`                                      | Create order                                   |
+| GET    | `/orders/table-session/:table_session_id`      | List orders by table session                   |
+| GET    | `/orders/table-session/:table_session_id/total`| Display total (sum) for the table session      |
+
 
 <br>
 
