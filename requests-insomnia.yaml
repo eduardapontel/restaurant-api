@@ -55,7 +55,7 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"name": "Sorvete de chocolate",
+            	"name": "chocolate ice cream",
             	"price": 15
             }
         headers:
@@ -85,7 +85,7 @@ collection:
           mimeType: application/json
           text: |-
             {
-            	"name": "Sorvete de morango",
+            	"name": "strawberry ice cream",
             	"price": 15
             }
         headers:
