@@ -128,7 +128,7 @@ A RESTful API for restaurant management, built with **Node.js** and **TypeScript
 |-------:|-------------|------------------------|
 | GET    | `/tables`   | List tables            |
 
-> Table creation is handled manually in the database or via the `seeds/tables.ts` file.
+> Table creation and deletion are handled manually in the database or via the `seeds/tables.ts` file, as the tables are meant to be fixed.
 
 ### Table Sessions
 | Method | Endpoint                   | Description                     |
