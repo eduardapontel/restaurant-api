@@ -74,39 +74,41 @@ This project allows efficient management of products, tables, table sessions, an
 
 1. **Clone the repository**
 
-   ```bash
-   git clone https://github.com/eduardapontel/restaurant-api
-   cd restaurant-api
-   ```
+    ```bash
+    git clone https://github.com/eduardapontel/restaurant-api
+    cd restaurant-api
+    ```
 
 2. **Install dependencies**
 
-   ```bash
-   npm install
-   ```
+    ```bash
+    npm install
+    ```
 
-3. Database setup
+3. **Database setup**
 
-- Adjust knexfile.ts as needed.
-- Run migrations:
-  
-   ```bash
-   npx knex migrate:latest
-   ```
+    - Adjust `knexfile.ts` as needed.
+    - Run migrations:
+    
+      ```bash
+      npx knex migrate:latest
+      ```
 
-- Run seeds:
-   ```bash
-   npx knex seed:run
-   ```
-  
-4. Start the server
-   ```bash
-   npm run dev
-   ```
+    - Run seeds:
+    
+      ```bash
+      npx knex seed:run
+      ```
 
-5. Test requests
+4. **Start the server**
 
-- Import ```requests-insomnia.yaml``` into Insomnia or similar tools.
+    ```bash
+    npm run dev
+    ```
+
+5. **Test requests**
+
+    - Import `requests-insomnia.yaml` into Insomnia or similar tools.
 
 <br>
 
